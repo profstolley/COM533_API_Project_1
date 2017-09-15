@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f3f1f1;
+}
+
+header {
+	background-color: #ffffff;
+	height: 60px;
+
+}
+
+h1 {
+	padding: 10px 0 10px 40px;
+	font-weight: bold;
+}
+
+
+table {
+	margin: auto;
+	border-collapse: collapse;
+	width: 600px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+a {
+	color: red;
+}
+
+#button {
+	margin-top: 30px;
+	margin-left: 40px;
+	font-size: 15px;
+}
+
+
+
