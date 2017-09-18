@@ -4,7 +4,7 @@ var createTable = function(){
 	var  users = [{
 			"name":"Qi Zhang",
 			"gitname": "QiZhang79",
-		    "id": "001",		    
+		    "id": "001",
 		    "location": "Chicago",
 		    "social_media":"facebook"
 		},{
@@ -12,23 +12,23 @@ var createTable = function(){
 			"gitname": "jwang206",
 		    "id": "002",
 		    "location": "Chicago",
-		    "social_media":"insgram"
+		    "social_media":"instagram"
 		},{
 			"name":"Sara Lopez",
 			"gitname": "slopez12",
 		    "id": "003",
 		    "location": "Chicago",
-		    "social_media":"insgram"
+		    "social_media":"instagram"
 		},{
 			"name":"Meiqi Zhao",
 			"gitname": "mzhao22",
 		    "id": "004",
 		    "location": "Chicago",
 		    "social_media":"facebook"
-		}      
+		}
 	];
 
-	
+
 
 	$('#result').hide();
 	$('#button').on("click",function(e){
@@ -44,7 +44,7 @@ var createTable = function(){
 
 			// }
 			$row += "<td>" + users[i]["name"] + "</td>";
-			$row += '<td><a href="https://github.com/' 
+			$row += '<td><a href="https://github.com/'
   				+ users[i]["gitname"] + '">' + users[i]["gitname"] + '</a></td>'
 			$row += "<td>" + users[i]["id"] + "</td>";
 			$row += "<td>" + users[i]["location"] + "</td>";
@@ -54,7 +54,7 @@ var createTable = function(){
 			$row += "</tr>";
 			tbody.append($row);
 		}
-		
+
 	});
 };
 
