@@ -35,13 +35,18 @@ var  users = [{
 			// 	$row += "<td>" + users[i]["name"] + "</td>";
 
 			// }
-			row += "<td>" + users[i]["name"] + "</td>";
+			for(var j=0; j < container.length; j++) {
+				var record = container[j]
+				row += "<td>" + users[i][record] + "</td>";
+			//row += "<td>" + users[i]["name"] + "</td>";
+			//row += "<td>" + users[i]["id"] + "</td>";
+			//row += "<td>" + users[i]["location"] + "</td>";
+			//row += "<td>" + users[i]["social_media"] + "</td>";
+		 }
 			row += '<td><a href="https://github.com/'
-  				+ users[i]["gitname"] + '">' + users[i]["gitname"] + '</a></td>'
-			row += "<td>" + users[i]["id"] + "</td>";
-			row += "<td>" + users[i]["location"] + "</td>";
-			row += "<td>" + users[i]["social_media"] + "</td>";
+					+ users[i]["gitname"] + '">' + users[i]["gitname"] + '</a></td>'
 			row += "</tr>";
+
 			tbody.append(row);
 		}
 	});
